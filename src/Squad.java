@@ -35,7 +35,7 @@ public class Squad
         india.addPlayer("Sachin");
         india.addPlayer("Raina");
 
-        india.setCaptain("Dhoni");
+        india.setCaptain("Raina");
 
         india.print();
     }
