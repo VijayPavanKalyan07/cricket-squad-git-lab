@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Squad
+{
+    private final List<String> players = new ArrayList<>();
+
+    public void addPlayer(String name)
+    {
+        players.add(name); // Add a player to the squad
+    }
+
+    public void print()
+    {
+        for(int i = 0; i < players.size(); i++)
+        {
+            System.out.println((i+1) + " " + players.get(i));
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        Squad india = new Squad();
+
+        india.addPlayer("Dhoni");
+        india.addPlayer("Yuvraj");
+        india.addPlayer("Sachin");
+
+        india.print();
+    }
+}
