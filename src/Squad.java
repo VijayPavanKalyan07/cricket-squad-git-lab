@@ -5,6 +5,13 @@ public class Squad
 {
     private final List<String> players = new ArrayList<>();
 
+    private String captain;
+
+    public void setCaptain(String c)
+    {
+        this.captain = c;
+    }
+
     public void addPlayer(String name)
     {
         players.add(name); // Add a player to the squad
@@ -16,6 +23,7 @@ public class Squad
         {
             System.out.println((i+1) + " " + players.get(i));
         }
+        System.out.println("Captain: " + captain);
     }
 
     public static void main(String[] args)
@@ -26,6 +34,8 @@ public class Squad
         india.addPlayer("Yuvraj");
         india.addPlayer("Sachin");
         india.addPlayer("Raina");
+
+        india.setCaptain("Dhoni");
 
         india.print();
     }
