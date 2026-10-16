@@ -25,6 +25,7 @@ public class Squad
         india.addPlayer("Dhoni");
         india.addPlayer("Yuvraj");
         india.addPlayer("Sachin");
+        india.addPlayer("Raina");
 
         india.print();
     }
